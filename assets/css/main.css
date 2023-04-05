@@ -210,7 +210,7 @@ input, select, textarea {
 		}
 
 	footer {
-		margin: 3em 0 0 0;
+		margin: 0.5em 0 0 0;
 	}
 
 		footer > p {
@@ -1661,7 +1661,7 @@ input, select, textarea {
 			background-image: linear-gradient(
 				to right,
 				#d66c54,
-				#5463d6 50%,
+				#d6be54 50%,
 				#fffafa 50%
 			  );
 			transition: 0.5s;
@@ -2025,7 +2025,7 @@ input, select, textarea {
 
 	.wrapper {
 		background-image: url("images/bg.png");
-		padding: 8em 0 8em 0;
+		padding: 2em 0 2em 0;
 		text-align: center;
 	}
 
@@ -2034,7 +2034,7 @@ input, select, textarea {
 			background-color: #02352c;
 		}
 
-		.wrapper.style2 {
+		.wrapper.style2, .row .aln-center{
 			background-color: #fafafa;
 			text-shadow: 1px 1px 0px #fff;
 		box-shadow: inset 0px 1px 0px 0px rgba(224, 23, 23, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
@@ -2090,7 +2090,7 @@ input, select, textarea {
 	}
 
 	#nav.small {
-		transition: 0.5s;
+		transition: 0.25s;
 		background-color: #02352c;
 	  }
 
@@ -2492,8 +2492,7 @@ input, select, textarea {
 
 
 /*--GLITCH--*/
-.top{
-	background: black;
+.row {
 	font-family: "Oswald", sans-serif;
 	font-style: italic;
 }
@@ -2744,4 +2743,53 @@ input, select, textarea {
 	2% {
 		transform: rotateX(0deg) skewX(0deg);
    }
+}
+
+/*--RECENTWORKS--*/
+
+footer .aaa{
+	text-shadow: none;
+	font-size: 24px;
+}
+.aaa a{
+	color: #ffffff;
+	position: relative;
+}
+.aaa{
+	background-image: linear-gradient(
+		to right,
+		#d66c54,
+		#5463d6 50%,
+		#020207 50%
+	  );
+	transition: 0.5s;
+	color: #02060a;
+	text-decoration: none;
+	background-size: 200% 100%;
+	background-position: -100%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	transition: all 0.3s ease-in-out;
+}
+.aaa:before {
+	content: '';
+	background: #050707;
+	color: #000000;
+	display: block;
+	position: absolute;
+	bottom: -0px;
+	left: 0;
+	width: 0;
+	height: 3px;
+}
+.aaa:hover {
+	background-position: 0;
+}
+.aaa:hover {
+	background-position: 0;
+}
+
+
+.material-symbols-outlined {
+  font-size: 5rem;
 }

@@ -2091,7 +2091,7 @@ input, select, textarea {
 
 	#nav.small {
 		transition: 0.25s;
-		background-color: #02352c;
+		background-color: #0e6958;
 	  }
 
 		#nav ul {
@@ -2125,7 +2125,7 @@ input, select, textarea {
 
 			#nav a:hover {
 				color: #fff !important;
-				background: #383838;
+				background: #61ced0;
 			}
 
 			#nav a.active {

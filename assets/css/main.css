@@ -93,6 +93,7 @@ input, select, textarea {
 		}
 
 	body, input, textarea, select {
+		background-color: #02352c;
 		font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 		line-height: 1.85em;
 		color: #888888;
@@ -2024,7 +2025,6 @@ input, select, textarea {
 
 	.wrapper {
 		background-image: url("images/bg.png");
-		box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
 		padding: 8em 0 8em 0;
 		text-align: center;
 	}
@@ -2037,17 +2037,20 @@ input, select, textarea {
 		.wrapper.style2 {
 			background-color: #fafafa;
 			text-shadow: 1px 1px 0px #fff;
+		box-shadow: inset 0px 1px 0px 0px rgba(224, 23, 23, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
 		}
 
 		.wrapper.style3 {
 			background-color: #f4f4f4;
 			text-shadow: 1px 1px 0px #fff;
+		box-shadow: inset 0px 1px 0px 0px rgba(224, 23, 23, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
 		}
 
 		.wrapper.style4 {
 			background-color: #303030;
 			color: #999;
 			text-shadow: -1px -1px 0px #181818;
+		box-shadow: inset 0px 1px 0px 0px rgba(224, 23, 23, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
 		}
 
 			.wrapper.style4 h1, .wrapper.style4 h2, .wrapper.style4 h3, .wrapper.style4 h4, .wrapper.style4 h5, .wrapper.style4 h6 {
@@ -2072,7 +2075,8 @@ input, select, textarea {
 /* Nav */
 
 	#nav {
-		background-color: #282828;
+		
+		background-color: transparent;
 		text-align: center;
 		position: fixed;
 		left: 0;
@@ -2082,7 +2086,13 @@ input, select, textarea {
 		cursor: default;
 		height: 3.5em;
 		line-height: 3.5em;
+		transition: 0.5s;
 	}
+
+	#nav.small {
+		transition: 0.5s;
+		background-color: #02352c;
+	  }
 
 		#nav ul {
 			margin-bottom: 0;
@@ -2210,7 +2220,6 @@ input, select, textarea {
 			#copyright a:hover {
 				color: #777;
 			}
-
 /* Large */
 
 	@media screen and (max-width: 1280px) {

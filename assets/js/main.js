@@ -32,3 +32,12 @@
 		});
 
 })(jQuery);
+
+$(window).scroll(function () {
+	var sc = $(window).scrollTop()
+   if (sc > 150) {
+	   $("#nav").addClass("small")
+   } else {
+	   $("#nav").removeClass("small")
+   }
+});

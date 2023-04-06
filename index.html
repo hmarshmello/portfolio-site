@@ -158,7 +158,7 @@
 					</header>
 					<div class="row">
 						<div class="col-12">
-							<form method="post" action="/index.html">
+							<!--<form name="contact" method="POST" data-netlify="true">
 								<div class="row">
 									<div class="col-6 col-12-small">
 										<input type="text" name="name" id="name" placeholder="Name" />
@@ -174,12 +174,28 @@
 									</div>
 									<div class="col-12">
 										<ul class="actions">
-											<li><input type="submit" value="Send Message" /></li>
-											<li><input type="reset" value="Clear Form" class="alt" /></li>
+											<li><button type="submit">Send</button></li>
+											<li><input type="reset" value="Clear Form"  /></li>
+											<input type="hidden" name="form-name" value=" ">
 										</ul>
 									</div>
 								</div>
-							</form>
+							</form>-->
+							<form name="contact" method="POST" data-netlify="true" action="/">
+								<p>
+								  <label>Your Name: <input type="text" name="name" /></label>
+								</p>
+								<p>
+								  <label>Your Email: <input type="email" name="email" /></label>
+								</p>
+								<p>
+								  <label>Message: <textarea name="message"></textarea></label>
+								</p>
+								<p>
+								  <button type="submit">Send</button>
+								</p>
+							  </form>
+							  <input type="hidden" name="form-name" value="contact">
 						</div>
 						<div class="col-12">
 							<hr />
@@ -212,11 +228,11 @@
 			</article>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
+			<!--<script src="assets/js/jquery.min.js"></script>-->
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
+			<!--<script src="assets/js/util.js"></script>-->
 			<script src="assets/js/main.js"></script>
 
 	</body>
